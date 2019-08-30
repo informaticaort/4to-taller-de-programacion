@@ -1,2 +1,2 @@
 # 4to-taller-de-programacion
-Repositorio de Taller de Programación, materia de 4to año de la orientación
+Repositorio de la materia Taller de Programación, correspondiente al cuarto año de la orientación
