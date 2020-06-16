@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link href="fontawesome/css/all.css" rel="stylesheet">
+        <title>TP 4 - Arribos y partidas - Marina Roitman</title>
+    </head>
+    <body>
+        <!-- Barra de navegación fijada -->
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark colorBarra">
+            <img src="Imagenes utlizadas/Logo chiquito.png" alt="Logo">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                <a class="nav-link" href="index.html"><i class="fas fa-home"></i> Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="quienessomos.html"><i class="fas fa-users"></i> Quienes somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="destinos.html"><i class="fas fa-globe-americas"></i> Destinos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="arribosypartidas.html"><i class="fas fa-plane-departure"></i> Arribos y partidas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="nuestrosaviones.html"><i class="fas fa-plane"></i> Nuestros aviones</a>
+                </li>
+                <button type="button" class="btn btn-outline-info botonLog">Log in</button>
+            </ul>
+            </div>
+        </nav>
+        <!-- Fin de la barra de navegación-->
+
+        <section class="my-4 pt-5">
+        <div class="container">
+                <h1>Arribos y partidas</h1>
+                <!-- Arribos -->
+                <section class="py-4">
+                    <h3>Arribos</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <table class="table table-responsive centrar tablaCentada">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Horario de arribo</th>
+                                        <th scope="col">Código de vuelo</th>
+                                        <th scope="col">Origen</th>
+                                        <th scope="col">Estimado</th>
+                                        <th scope="col">Aereopuerto-Terminal</th>
+                                        <th scope="col">Estado</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="table-warning">
+                                        <th scope="row">1</th>
+                                        <td>04:40AM</td>
+                                        <td>AA 1140</td>
+                                        <td>Roma-FCO</td>
+                                        <td>12.40hs</td>
+                                        <td>A</td>
+                                        <td>Demorado</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <th scope="row">2</th>
+                                        <td>05:00AM</td>
+                                        <td>AA 1240</td>
+                                        <td>Londres-LHR</td>
+                                        <td>11.00hs</td>
+                                        <td>A</td>
+                                        <td>En horario</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <th scope="row">3</th>
+                                        <td>08:00AM</td>
+                                        <td>AA 1111</td>
+                                        <td>Nueva York-JFK</td>
+                                        <td>11.00hs</td>
+                                        <td>C</td>
+                                        <td>En horario</td>
+                                    </tr>
+                                    <tr class="table-danger">
+                                        <th scope="row">4</th>
+                                        <td>13:00PM</td>
+                                        <td>AA 1301</td>
+                                        <td>Miami-MIA</td>
+                                        <td>08.00hs</td>
+                                        <td>C</td>
+                                        <td>Cancelado</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <th scope="row">5</th>
+                                        <td>17:00PM</td>
+                                        <td>AA 1232</td>
+                                        <td>Los Angeles-LAX</td>
+                                        <td>18.00hs</td>
+                                        <td>C</td>
+                                        <td>En horario</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Fin de Arribos -->
+                
+                <!-- Partidas -->
+                <section class="py-4">
+                    <h3>Partidas</h3>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <table class="table table-responsive centrar tablaCentada">
+                                    <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">Horario de partida</th>
+                                        <th scope="col">Código de vuelo</th>
+                                        <th scope="col">Destino</th>
+                                        <th scope="col">Estimado</th>
+                                        <th scope="col">Aereopuerto-Terminal</th>
+                                        <th scope="col">Estado</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr class="table-danger">
+                                        <th scope="row">1</th>
+                                        <td>11:00AM</td>
+                                        <td>AA 1241</td>
+                                        <td>Los Angeles-LAX</td>
+                                        <td>18.00hs</td>
+                                        <td>A</td>
+                                        <td>Cancelado</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <th scope="row">2</th>
+                                        <td>08:00AM</td>
+                                        <td>AA 1120</td>
+                                        <td>Cancún-CUN</td>
+                                        <td>08.30hs</td>
+                                        <td>C</td>
+                                        <td>En horario</td>
+                                    </tr>
+                                    <tr class="table-success">
+                                        <th scope="row">3</th>
+                                        <td>10:40PM</td>
+                                        <td>AA 1141</td>
+                                        <td>Roma-FCO</td>
+                                        <td>12.40hs</td>
+                                        <td>A</td>
+                                        <td>En horario</td>
+                                    </tr>
+                                    <tr class="table-danger">
+                                        <th scope="row">4</th>
+                                        <td>07:00AM</td>
+                                        <td>AA 1302</td>
+                                        <td>Rio de janeiro-GIG</td>
+                                        <td>04.00hs</td>
+                                        <td>C</td>
+                                        <td>Cancelado</td>
+                                    </tr>
+                                    <tr class="table-danger">
+                                        <th scope="row">5</th>
+                                        <td>12:00PM</td>
+                                        <td>AA 1233</td>
+                                        <td>Barcelona-BCN</td>
+                                        <td>11.00hs</td>
+                                        <td>C</td>
+                                        <td>Cancelado</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- Fin de Partidas -->
+        </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <!-- Copyright -->
+            <div class="text-center text-secondary py-3">
+                <p>© 2020 Copyright <span class="text-white">Marina A. Roitman</span></p>
+                <!-- Copyright -->
+                <!-- Redes -->
+                <a href="https://www.instagram.com/marualejandra123/" class="linkNoMarcado" title="Instagram">
+                <img class="boton" src="Imagenes utlizadas/Logo chiquito Instagram.png" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/" class="linkNoMarcado" title="Linked in">
+                <img class="boton" src="Imagenes utlizadas/Logo chiquito Linkedin.png" alt="Linked in">
+                </a>
+                <a href="https://www.facebook.com/" class="linkNoMarcado" title="Facebook">
+                <img class="boton" src="Imagenes utlizadas/Logo chiquito Facebook.png" alt="Facebook">
+                </a>
+                <!-- Fin redes -->
+            </div>
+        </footer>
+        <!-- Fin footer -->
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,80 @@
+@font-face { font-family: Quicksand; src: url('../Tipografias/quicksand/Quicksand_Book.otf'); } 
+
+body{
+    background-color: #e7f0ed;
+}
+
+h1{
+    font-family: Quicksand,Roboto,verdana;
+    font-weight: thin;
+    font-size: 40px;
+    color: #164f56;
+    text-align: center;
+}
+
+h5, h3{
+    font-family: Quicksand,Roboto,verdana;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+}
+
+h4{
+    font-family: Quicksand,Roboto,verdana;
+    color: white;
+    text-align: center;
+    font-weight: normal;
+}
+
+.colorBarra, footer{
+    background-color: #7fbac2;
+    font-family: Roboto,verdana;
+}
+
+.colorBarra a{
+    color: white;
+}
+
+.centrar{
+    text-align: center;
+}
+
+.linkNoMarcado:hover
+{
+    text-decoration: none;
+}
+
+.botonLog{
+    color: white;
+    border-color: white;
+}
+
+
+@media (min-width: 992px) {
+    .tablaCentada
+    {
+        display: inline-table;
+    }
+}
+
+@media (min-width: 576px) {
+    .textoCoronavirus
+    {
+        display: none;
+    }
+    .cardCoronavirus
+    {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+    .textoCoronavirus
+    {
+        display: block;
+    }
+    .cardCoronavirus
+    {
+        display: none;
+    }
+}
