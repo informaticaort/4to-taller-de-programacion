@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <link rel="icon" href="fotos/favicon.ico">
+        <script src="myScript.js"></script>
+    </head>
+    <body>
+        <div class="barraSup">
+            <img src="fotos/logo.png" alt="NewSocial" class="logo">
+            <h1>NewSocial</h1>
+        </div>
+        
+        <div class="progressContainer">
+            <div id="progressBar2"></div>
+        </div>
+
+        <div class="formulario">
+            <form method="POST" action="registro3.html">
+                
+                <label>Hobbies:</label><br>
+                <input type="checkbox" name="hobby1" class="CheckBox">
+                <label for="hobby1">Politica</label><br>
+                
+                <input type="checkbox" name="hobby2" class="CheckBox">
+                <label for="hobby2">Deportes</label><br>
+                
+                <input type="checkbox" name="hobby3" class="CheckBox">
+                <label for="hobby3">Cine y Series</label><br>
+                
+                <input type="checkbox" name="hobby4" class="CheckBox">
+                <label for="hobby4">Videojuegos</label><br>
+                
+                <input type="checkbox" name="hobby5" class="CheckBox">
+                <label for="hobby5">Cocina</label><br>
+
+                <label>Comidas preferidas:</label>
+                <select>
+                    <optgroup label="Pasta">
+                        <option value="Spaghetti">Spaghetti</option>
+                        <option value="Tirabuzon">Tirabuzon</option>
+                        <option value="Coditos">Coditos</option>
+                        <option value="Ravioles">Ravioles</option>
+                        <option value="Farfalle">Farfalle</option>
+                    </optgroup>
+                    <optgroup label="Pizza">
+                        <option value="Muzzarela">Pizza Muzzarela</option>
+                        <option value="Napolitana">Pizza Napolitana</option>
+                        <option value="Fugazzeta">Pizza Fugazzeta</option>
+                        <option value="c/Jamon">Pizza c/Jamon</option>
+                        <option value="c/Anchoas">Pizza c/Anchoas</option>
+                    </optgroup>
+                    <optgroup label="Asado">
+                        <option value="Vacio">Vacio</option>
+                        <option value="Tira de asado">Tira de asado</option>
+                        <option value="Chorizo">Chorizo</option>
+                        <option value="Bondiola">Bondiola</option>
+                        <option value="Morcilla">Morcilla</option>
+                    </optgroup>
+                </select><br>
+
+                <label>Restricciones Alimenticias:</label><br>
+                <input type="radio" name="restricciones" value="Sin Restricciones" id="Sin Restricciones" class="Radio" required>
+                <label for="Sin Restricciones">Sin Restricciones</label> <br>
+                
+                <input type="radio" name="restricciones" value="Vegetariano" id="Vegetariano" class="Radio">
+                <label for="Vegetariano">Vegetariano</label> <br>
+                
+                <input type="radio" name="restricciones" value="Celiaco" id="Celiaco" class="Radio">
+                <label for="Celiaco">Celiaco</label> <br>
+                
+                <input type="radio" name="restricciones" value="Kosher" id="Kosher" class="Radio">
+                <label for="Kosher">Kosher</label> <br>
+                
+                <div class="botones">
+                    <a href="registro1.html" title="anterior" class="links">Anterior</a>
+                    <input type="submit" value="Siguiente" class="btn-envio" onclick="validarCheckbox()">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

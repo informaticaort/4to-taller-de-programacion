@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <link rel="icon" href="fotos/favicon.ico">
+    </head>
+    <body>
+        <div class="barraSup">
+            <img src="fotos/logo.png" alt="NewSocial" class="logo">
+            <h1>NewSocial</h1>
+        </div>
+        
+        <div class="progressContainer">
+            <div id="progressBar3"></div>
+        </div>
+
+        <div class="formulario">
+            <form method="POST" action="graciasRegistro.html">
+                <label>Cantidad integrantes de la Familia:</label> <br>
+                <input type="number" name="miembrosFamilia" required><br>
+                
+                <label>Color Favorito:</label> <br>
+                <input type="color" name="color" required><br>
+                
+                <label>Comentarios Adicionales:</label> <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea> <br>
+
+                <div class="botones">
+                    <a href="registro2.html" title="anterior" class="links">Anterior</a>
+                    <input type="submit" value="Registrarse" class="btn-envio">    
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

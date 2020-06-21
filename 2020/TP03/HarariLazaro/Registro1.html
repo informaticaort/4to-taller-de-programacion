@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Site - Registro</title>
+    <link rel="shortcut icon" href="images/logo.png">    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <img class = "imgBanner" src="images/bannerRegistro.jpg" alt="banner registro">
+    </div>
+    <div class="textoCentrado">
+        <h1 class = "press">¡Bienvenido a nuestra plataforma!</h1>
+        <h2 class = "press">Por favor, completá los siguientes datos para registrarte:</h2>
+    </div>
+    <br>
+    <div class="cajaRegistro">
+        <form action="Registro2.html" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id = "nombre" placeholder = "Nombre" class = "input1" required>
+            <label for="apellido">Apellido:</label>
+            <input type="text" id = "apellido" class = "input1" placeholder="Apellido" required>
+            <label for="email">Email:</label>
+            <input type="email" id = "email" class = "input1" placeholder="Email" required>
+            <label for="password">Clave</label>
+            <input type="password" id = "password" class = "input1" placeholder="Clave" required>
+            <label for="verifyPassword">Repita clave:</label>
+            <input type="password" id = "verifyPassword" class = "input1" placeholder = "Repetir Clave" required>
+            <label for="nacimiento">Fecha Nacimiento:</label>
+            <input type="date" id = "nacimiento" class = "input1" required>
+            <label for="localidad">Localidad</label>
+            <input type="text" placeholder="Localidad" id="localidad" class = "input1" required>
+            <label for="provincia">Provincia</label>
+            <select name="provincia" id="provincia" required>
+                <option value="Buenos Aires">Buenos Aires</option>
+                <option value="CABA">Ciudad Autonoma de Buenos Aires</option>
+                <option value="Catamarca">Catamarca</option>
+                <option value="Chaco">Chaco</option>
+                <option value="Chubut">Chubut</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="Corrientes">Corrientes</option>
+                <option value="Entre Rios">Entre Rios</option>
+                <option value="Formosa">Formosa</option>
+                <option value="Jujuy">Jujuy</option>
+                <option value="La Pampa">La Pampa</option>
+                <option value="La Rioja">La Rioja</option>
+                <option value="Mendoza">Mendoza</option>
+                <option value="Misiones">Misiones</option>
+                <option value="Neuquen">Neuquen</option>
+                <option value="Rio Negro">Rio Negro</option>
+                <option value="Salta">Salta</option>
+                <option value="San Juan">San Juan</option>
+                <option value="San Luis">San Luis</option>
+                <option value="Santa Cruz">Santa Cruz</option>
+                <option value="Santa Fe">Santa Fe</option>
+                <option value="Sgo. del Estero">Sgo. del Estero</option>
+                <option value="Tierra del Fuego">Tierra del Fuego</option>
+                <option value="Tucuman">Tucuman</option>
+            </select>
+            <!--RECAPTCHA NO ANDA XQ HAY Q REGISTRAR DOMINIO Y FUNCIONA SOLO PARA ESE DOMINIO REGISTRADO, X ESO LO SAQUE-->
+            <br><br>
+            <button type = "submit" onclick = "registro1()" class = "btnContinuar">Continuar</button>
+            <br>
+        </form>
+    </div>
+    <br><br><br>
+    <script src="js/script.js"></script>
+    <script src = "js/registro1.js"></script>
+    </body>
+</body>
+</html>

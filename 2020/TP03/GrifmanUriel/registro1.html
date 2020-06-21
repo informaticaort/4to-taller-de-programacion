@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Registrarse</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <link rel="icon" href="fotos/favicon.ico">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <script src="myScript.js"></script>
+    </head>
+    <body>
+        <div class="barraSup">
+            <img src="fotos/logo.png" alt="NewSocial" class="logo">
+            <h1>NewSocial</h1>
+        </div>
+        
+        <div class="progressContainer">
+            <div id="progressBar1"></div>
+        </div>
+    }
+        <div class="formulario">
+            <form method="POST" action="registro2.html" onSubmit="return validarClaves(this)">
+                <label>Nombre:</label><br>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" required/><br>
+                
+                <label>Apellido:</label><br>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido" required/><br>
+                
+                <label>EMail:</label><br>
+                <input type="email" name="email" placeholder="Ingrese su EMail" required/><br>
+                
+                <label>Contraseña:</label><br>
+                <input type="password" name="psw" placeholder="Ingrese su contraseña" required/><br>
+                
+                <label>Repita Contraseña:</label><br>
+                <input type="password" name="psw2" placeholder="Repita su contraseña" required/><br>
+                
+                <label>Fecha de Nacimiento:</label><br>
+                <input type="date" name="fechaNacimiento"/><br>
+                
+                <label>Localidad:</label><br>
+                <input type="text" name="localidad" placeholder="Ingrese su localidad" required/><br>
+                
+                <label for="provincia">Provincia:</label><br>
+                <select name="provincia" required>
+                    <option value="CABA">CABA</option>
+                    <option value="Buenos Aires">Buenos Aires</option>
+                    <option value="Cordoba">Cordoba</option>
+                    <option value="Santa Fe">Santa Fe</option>
+                    <option value="Entre Rios">Entre Rios</option>
+                    <option value="Misiones">Misiones</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Tierra Del Fuego">Tierra del Fuego</option>
+                    <option value="Chubut">Chubut</option>
+                    <option value="Tucuman">Tucuman</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="Mendoza">Mendoza</option>
+                    <option value="Salta">Salta</option>
+                    <option value="Corrientes">Corrientes</option>
+                    <option value="Rio Negro">Rio Negro</option>
+                    <option value="San Luis">San Luis</option>
+                    <option value="San Juan">San Juan</option>
+                    <option value="Neuquen">Neuquen</option>
+                    <option value="Jujuy">Jujuy</option>
+                    <option value="Formosa">Formosa</option>
+                    <option value="Catamarca">Catamarca</option>
+                    <option value="La Rioja">La Rioja</option>
+                    <option value="Santiago del Estero">Santiago del Estero</option>
+                </select><br>
+
+                <div class="g-recaptcha" id="rcaptcha"  data-sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"></div>
+                
+                <input type="submit" value="Siguiente" class="btn-envio">
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro 3</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta charset = "UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img class="center"src="img/logo.png" alt="logo" width="110" height="100">
+        <div class="registro">
+            <h1 class="titulos">registrarse</h1>
+            <form method="post" action="graciasRegistro.html">
+                <label class="textos">Integrantes de la familia *</label><br/>
+                <br/>
+                <input type="number" max="50" min="1" step="1" class="caja"required/><br/>
+                <br/>
+                <label class="textos">Color favorito</label><br/>
+                <br/>
+                <input type="color"/><br/>
+                <br/>
+                <label class="textos"> Comentarios adicionales</label><br/>
+                <textarea name="comentarios adicionales" class="textos caja" placeholder="Escriba su comentario aquí..."></textarea><br/>
+                <br/>
+                <input type="image" src="img/Siguiente.png" alt="Siguiente" class="botonright">
+                <input type="image" src="img/volver.png" alt="volver" class="botonleft" formaction="registro2.html">
+                <progress value="99" max="100" class="progressbar">99 %</progress>
+            </form>
+        </div>
+    </body>
+</html>

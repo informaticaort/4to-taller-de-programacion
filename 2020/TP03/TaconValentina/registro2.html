@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registro 2</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta charset = "UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img class="center" src="img/logo.png" alt="logo" width="110" height="100">
+        <div class="registro">
+            <h1 class="titulos">registrarse</h1>
+            <form method="post" action="registro3.html">
+                <p>
+                    <div class="textos">Marca tus intereses: </div><br/>
+                    <input type="checkbox" name="Deportes"/><label for="Deportes" class="textos">Deportes</label><br/>
+                    <input type="checkbox" name="Música" /><label for="Música" class="textos">Música</label><br/>
+                    <input type="checkbox" name="Arte" /><label for="Arte" class="textos">Arte</label><br/>
+                    <input type="checkbox" name="Televisión y entretenimiento" /><label for="Televisión y entretenimiento" class="textos">Televisión y entretenimiento</label><br/>
+                    <input type="checkbox" name="Tecnología" /><label for="Tecnología" class="textos">Tecnología</label><br/>
+                    <input type="checkbox" name="Política" /><label for="Política" class="textos">Política</label><br/>
+                    <input type="checkbox" name="Viajes" /><label for="Viajes" class="textos">Viajes</label><br/>
+                    <input type="checkbox" name="Fotografía"/><label for="Fotografía" class="textos">Fotografía</label><br/>
+                </p>
+                <p>
+                    <label for="comida" class="textos">¿Cual es tu comida favorita?</label><br/>
+                    <div class="caja" style="float: left; width: 465;">
+                        <select name="comida" >
+                            <option disabled selected value="Seleccione una opción"> Seleccione una opción </option>
+                            <optgroup label="Pastas">
+                                <option value="Ravioles" class="textos"> Ravioles </option>
+                                <option value="Canelones" class="textos"> Canelones </option>
+                                <option value="Lasaña" class="textos"> Lasaña </option>
+                                <option value="Espagueti" class="textos"> Espagueti </option>
+                                <option value="Ñoquis" class="textos"> Ñoquis </option>
+                                <option value="Macarrones" class="textos"> Macarrones </option>
+                            </optgroup>
+                            <optgroup label="Comidas rapidas">
+                                <option value="Hamburguesa" class="textos"> Hamburguesa </option>
+                                <option value="Pizza" class="textos"> Pizza </option>
+                                <option value="Tacos" class="textos"> Tacos </option>
+                                <option value="Pancho" class="textos"> Pancho </option>
+                                <option value="Papas fritas" class="textos"> Papas fritas </option>
+                                <option value="Sandwich" class="textos"> Sandwich </option>
+                            </optgroup>
+                            <optgroup label="Mariscos">
+                                <option value="Salmón" class="textos"> Salmón </option>
+                                <option value="Langosta" class="textos"> Langosta </option>
+                                <option value="Atún" class="textos"> Atún </option>
+                                <option value="Trucha" class="textos"> Trucha </option>
+                                <option value="Merluza" class="textos"> Merluza </option>
+                                <option value="Camarones" class="textos"> Camarones </option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <br/>
+                </p><br/>
+                <p><br/>
+                    <div class="textos">Indica si tenés alguna restricción alimenticia: </div><br/>
+                    <input type="radio" name="restriccion" value="sin restricciones"/><label for="Sin restricciones" class="textos"> Sin restricciones </label><br/>
+                    <input type="radio" name="restriccion" value="vegetariano"/><label for="Vegetariano" class="textos"> Vegetariano </label><br/>
+                    <input type="radio" name="restriccion" value="vegano"/><label for="Vegano" class="textos"> Vegano </label><br/>
+                    <input type="radio" name="restriccion" value="celiaco"/><label for="Celiaco" class="textos"> Celiaco </label><br/>
+                    <input type="radio" name="restriccion" value="kosher"/><label for="Kosher" class="textos"> Kosher </label><br/>
+                </p>
+                <input type="image" src="img/Siguiente.png" alt="Siguiente" class="botonright">
+                <input type="image" src="img/volver.png" alt="volver" class="botonleft" formaction="registro1.html">
+                <progress value="66" max="100" class="progressbar">66 %</progress>
+            </form>
+        </div>
+    </body>
+</html>

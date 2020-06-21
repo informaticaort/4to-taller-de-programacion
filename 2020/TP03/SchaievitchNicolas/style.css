@@ -1,0 +1,377 @@
+*{
+    font-family: "Ubuntu", sans-serif;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+nav{
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    margin: 0;
+    padding-top: .7rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+#logo-top{
+    margin-bottom: .5rem;
+}
+
+#logo-link{
+    padding-left: 1rem;
+}
+
+
+#navlinks{
+    display: inline;
+    float: right;
+    text-align: right;
+    margin-top: .4rem;
+    margin-right: 1rem;
+}
+
+#navlinks a{
+    margin: 0 .5rem;
+}
+
+#login-link{
+    font-weight: 300;
+}
+
+#trig-one{
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    background-color: #FFB931;
+    height: 100vh;
+    clip-path: polygon(0% 0%, 50% 100%, 0% 100%);
+}
+
+#trig-two{
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    background-color: #F88A3A;
+    height: 100vh;
+    clip-path: polygon(100% 25%, 100% 100%, 0% 100%, 0 75%);
+}
+
+#trig-three{
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    background-color: #FFB931aa;
+    height: 100vh;
+    clip-path: polygon(100% 0%, 50% 100%, 100% 100%);
+}
+
+#main-content{
+    z-index: 1;
+    text-align: center;
+}
+
+
+
+#main-logo{
+    max-width: 60%;
+    display: block;
+    margin: auto;
+    margin-top: 10vh;
+
+}
+
+#slogan{
+    margin-top: 5vh;
+    font-size: 1.5rem;
+}
+
+#register{
+    background-color: black;
+    color: white;
+
+    margin-top: 8vh;
+    padding: 1.5rem 4rem;
+    font-size: 1.8rem;
+}
+
+.btn{
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 10rem;
+    border: none;  
+}
+
+#login{
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-top: 1.1rem;
+}
+
+
+
+#ad{
+    z-index: 1;
+    display: block;
+    position: absolute;
+    bottom: 3vh;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+}
+
+/*Reemplazo de body background-color, para usar un sólo css*/
+#bg{
+    z-index: -2;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    background-color: #FFD88D;
+    height: 100vh;
+}
+
+
+#content{
+    display: flex;
+    height: 80vh;
+    width: 90vw;
+    margin: 10vh auto;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#my-portal{
+    z-index: 100;
+    background-color: white;
+    height: 100%;
+    flex: 1;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+
+#feed{
+    z-index: 100;
+    background-color: white;
+    height: 100%;
+    flex: 2;
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#my-portal h1{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+#my-portal span{
+    line-height: 3rem;
+}
+
+#feed h3{
+    margin-top: 10vh;
+}
+
+#form-cont{
+    position: relative;
+    margin: 15vh auto;
+    z-index: 100;
+    background-color: white;
+    height: 50vh;
+    width: 40%;
+    border-radius: 1rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+#form-cont h1{
+    font-weight: 400;
+}
+
+@media (max-width: 1000px){
+    #form-cont{
+        width: 80%;
+    }
+}
+
+
+/*Uso labels por accesibilidad, placeholders para indicar*/
+label{
+    display: none;
+}
+
+input{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    width: 100%;
+    padding-left: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: .3rem;
+    margin: 0 1rem;
+}
+
+.formline{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+#login-btn{
+    color: white;
+    background: #FFB931;
+    margin-top: 3rem;
+    border-radius: 30rem;
+    width: 40%;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+}
+
+
+#progress{
+    position: absolute;
+    display: flex;
+    bottom: 1.4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    justify-content: space-between;
+}
+
+#progress div{
+    background-color: gray;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+}
+
+#siguiente{
+    position: absolute;
+    color: white;
+    background: #FFB931;
+    border-radius: 30rem;
+    width: 40%;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    bottom: 5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#siguiente:hover{
+    background-color: orange;
+}
+
+#prev{
+    position: absolute;
+    color: #FFB931;
+    border: #FFB931 2px solid;
+    background: white;
+    border-radius: 30rem;
+    padding: .5rem 1rem;
+    font-size: 1.2rem;
+    bottom: 1rem;
+    left: 1rem;
+}
+
+#prev:hover{
+    background-color: #ffefee;
+}
+
+.showLabel{
+    display: inline;
+}
+
+select{
+    font-family: "Ubuntu", sans-serif;
+    font-size: 1rem;
+    line-height: 2.5rem;
+    height: 2.5rem;
+    background-color: white;
+    width: 100%;
+    padding-left: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: .3rem;
+    margin: 0 1rem;
+}
+
+
+#tengo-usuario{
+    position: absolute;
+    bottom: 3.5rem;
+    transform: translateX(-50%);
+}
+
+.check{
+    display: inline;;
+    text-align: center;
+    line-height: 3rem;
+}
+
+
+#form-4{
+    text-align: left;
+}
+
+.check input{
+    width: 2rem;
+    display: inline;
+    background-color: white;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+  }
+
+
+#col-1{
+    margin-left: 10%;
+    text-align: left;
+    float: left;
+    width: 40%;
+}
+
+#col-2{
+    text-align: left;
+}
+
+#register-btn{
+    color: white;
+    background: #FFB931;
+    border-radius: 30rem;
+    width: 40%;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+}
+
+#gomain{
+    margin-top: 20%;
+    color: white;
+    background-color: #FFB931;
+    border-radius: 30rem;
+    width: 50%;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+}
+
+#thanks{
+    margin-top: 10%;
+}

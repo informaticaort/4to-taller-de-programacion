@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"crossorigin="anonymous">
+        <link rel="stylesheet" href="estilos.css">
+        <script src="https://kit.fontawesome.com/15ab68282c.js" crossorigin="anonymous"></script>
+        <title>AA2020</title>
+    </head>
+    <body>
+        <div>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand" href="index.html"><img src="logo.png" width="70" alt="Logo" class="d-inline-block align-middle mr-2">AA2020</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarColor01">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="quienessomos.html">Quienes somos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="destinos.html">Destinos</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="arribosypartidas.html">Arribos y partidas<span class="sr-only">(actual)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nuestrosaviones.html">Nuestros aviones</a>
+                        </li>
+                    </ul>
+                    <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Login</button>
+                </div>
+            </nav>
+        </div>
+        
+        <div class="container pt-5">
+            <div class="row">
+              <div class="col-12 text-center">
+                <h1>Arribos</h1>
+              </div>
+            </div>
+            
+            <section>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xs-12 col-lg-8 col-md-12">
+                    <table class="table table-bordered table-responsive">
+                      <thead>
+                        <tr>
+                          <th>#</th>
+                          <th scope="col">Horario</th>
+                          <th scope="col">Vuelo</th>
+                          <th scope="col">Origen</th>
+                          <th scope="col">Estimado</th>
+                          <th scope="col">Aeropuerto-Terminal</th>
+                          <th scope="col">Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-success">
+                          <th scope="row">1</th>
+                          <td>10:55</td>
+                          <td>AA 1026</td>
+                          <td>Roma, Italia</td>
+                          <td>2:00hs</td>
+                          <td>Leonardo da Vinci, Terminal 1</td>
+                          <td>Aterrizado</td>
+                        </tr>
+                        <tr class= "table-warning">
+                          <th scope="row">2</th>
+                          <td>11:30</td>
+                          <td>LH 4234</td>
+                          <td>Lisboa, Portugal</td>
+                          <td>2:00hs</td>
+                          <td>Humberto Delgado, Terminal 1</td>
+                          <td>Atrasado</td>
+                        </tr>
+                        <tr class="table-danger">
+                          <th scope="row">3</th>
+                          <td>12:00</td>
+                          <td>FR 1935</td>
+                          <td>San Petersburgo, Rusia</td>
+                          <td>12:00hs</td>
+                          <td>Púlkovo, Terminal 2</td>
+                          <td>Cancelado</td>
+                        </tr>
+                        <tr class="table-primary">
+                          <th scope="row">4</th>
+                          <td>12:45</td>
+                          <td>AY 361</td>
+                          <td>Roma, Italia</td>
+                          <td>4:00hs</td>
+                          <td>Leonardo da Vinci, Terminal 2</td>
+                          <td>A tiempo</td>
+                        </tr>
+                        <tr class="table-success">
+                          <th scope="row">5</th>
+                          <td>13:30</td>
+                          <td>IB 375</td>
+                          <td>Tokio, Japón</td>
+                          <td>3:30hs</td>
+                          <td>Haneda, Terminal 2</td>
+                          <td>Aterrizado</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+            <div class="row">
+              <div class="col-12 text-center">
+                <h1>Partidas</h1>
+              </div>
+            </div>
+            <section>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-12 col-xs-12 col-lg-8 col-md-12">
+                    <table class="table table-bordered table-responsive" id="partidas">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Horario</th>
+                          <th scope="col">Vuelo</th>
+                          <th scope="col">Destino</th>
+                          <th scope="col">Estimado</th>
+                          <th scope="col">Aeropuerto-Terminal</th>
+                          <th scope="col">Estado</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr class="table-success">
+                          <th scope="row">1</th>
+                          <td>14:00</td>
+                          <td>GTC 512</td>
+                          <td>Lisboa, Portugal</td>
+                          <td>5:00hs</td>
+                          <td>Humberto Delgado, Terminal 1</td>
+                          <td>Aterrizado</td>
+                        </tr>
+                        <tr class= "table-success">
+                          <th scope="row">2</th>
+                          <td>7:00</td>
+                          <td>A3 603</td>
+                          <td>Tokio, Japón</td>
+                          <td>2:00hs</td>
+                          <td>Haneda, Terminal 3</td>
+                          <td>Aterrizado</td>
+                        </tr>
+                        <tr class="table-primary">
+                          <th scope="row">3</th>
+                          <td>11:45</td>
+                          <td>GHY 623</td>
+                          <td>Lisboa, Portugal</td>
+                          <td>7:00hs</td>
+                          <td>Humberto Delgado, Terminal 2</td>
+                          <td>A tiempo</td>
+                        </tr>
+                        <tr class="table-danger">
+                          <th scope="row">4</th>
+                          <td>8:45</td>
+                          <td>2P 237</td>
+                          <td>Roma, Italia</td>
+                          <td>9:00hs</td>
+                          <td>Leonardo da Vinci, Terminal 1</td>
+                          <td>Cancelado</td>
+                        </tr>
+                        <tr class="table-warning">
+                          <th scope="row">5</th>
+                          <td>10:30</td>
+                          <td>V2 301</td>
+                          <td>San Petersburgo, Rusia</td>
+                          <td>3:00hs</td>
+                          <td>Púlkovo, Terminal 1</td>
+                          <td>Atrasado</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </section>
+        </div>
+
+        <section>
+            <footer class="page-footer font-small">
+                <div style="background-color: #17a2b8;">
+                    <div class="container">
+                        <div class="row py-4 d-flex align-items-center">
+                            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+                                <h6 class="mb-0">Nuestras redes sociales!</h6>
+                            </div>
+                            <div class="col-md-6 col-lg-7 text-center text-md-right">
+                                <a href="https://www.facebook.com/" class="fb-ic">
+                                    <i class="fab fa-facebook-f white-text mr-4"> </i>
+                                </a>
+                                <a href="https://twitter.com/explore" class="tw-ic">
+                                    <i class="fab fa-twitter white-text mr-4"> </i>
+                                </a>
+                                <a href="https://www.instagram.com/" class="ins-ic">
+                                    <i class="fab fa-instagram white-text"> </i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright text-center py-3">© 2020 Copyright: Martin Schifer</div>
+            </footer>
+        </section>
+
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+
+                $('.modal').modal('show');
+
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,211 @@
+
+/* Otros  */
+.frase{
+    font-size: 2rem;
+    color: rgb(90, 86, 86);
+}
+
+.slogan{
+    font-family: 'Copperplate';
+    font-size: 2rem;
+    color: rgb(100, 97, 97);
+    
+}
+.footerPerso{
+    background-color: cadetblue;
+    text-align: center;
+    
+}
+
+/* fin Otros  */
+
+/* Parrafo  */
+.subtituloParrafo{
+    color: rgb(150, 150, 211);
+    
+    }
+.parrafo{
+    color: rgb(109, 106, 106);
+    text-align: left;
+     font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+        
+}
+.parrafoDestinos{
+    color: rgb(238, 227, 227);
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    }
+.parrafo2{
+    color: rgb(109, 106, 106);
+    text-align: left;
+    font-family: 'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    font-size: 0.95rem;
+    }
+
+/* fin Parrafos  */
+
+/* Bordes  */
+.bordeTitulo{
+    border-bottom: rgb(150, 150, 211) solid;
+}
+.bordesBarraAviones{
+    border:  rgb(150, 150, 211)  outset;
+    background-color: rgb(116, 116, 175);  
+}
+.bordesInformacion{
+    border: solid rgb(25, 42, 100);
+    background-color: rgb(25, 42, 100);
+    }
+/* fin Bordes  */
+
+/* Titulos  */
+.tituloDestino{
+    color: white;
+    font-size: 2rem;
+    text-align: left;
+    font-family: serif;
+
+}
+.tituloBarraNavegacion{
+    font-size: 2rem;
+}
+.titulo{
+    color: white;
+    font-size: 3rem;
+}
+.tituloIndex {
+    color: white;
+}
+.card-title{
+    border-bottom: solid white;
+   font-size: 2rem;
+}
+.tituloParrafo{
+    color: rgb(250, 249, 249);
+    letter-spacing: 0.2rem;
+}
+
+.tituloDireccion{
+    color: rgb(250, 249, 249);
+    letter-spacing: 0.2rem;
+    font-size: 1.5rem;
+}
+
+/* fin Titulos  */
+
+/* Iconos  */
+.iconInsta{
+    color: rgb(175, 61, 90);
+}
+.iconFacebo{
+    color: rgb(15, 71, 175);
+}
+.iconMapa{
+    color: rgb(150, 150, 211);
+}
+.iconInfo{
+    color: rgb(150, 150, 211);
+}
+.iconCampa{
+    color: rgb(207, 197, 57);
+}
+.iconAvion{
+    color: rgb(19, 35, 83);
+}
+.iconClima{
+    color: rgb(194, 144, 35);
+}
+.iconBus{
+    color: rgb(17, 148, 94);
+}
+.iconoParrafo{
+    color:rgb(150, 150, 211);
+}
+/* fin Iconos  */
+
+
+
+/* configuracion para computadora  */
+/* Por debajo de 425px */
+    @media screen and (max-width: 425px){
+        .slogan{
+        font-size: 1rem;
+        
+        }
+        
+        .tituloIndex {
+            
+            font-size: 1.25rem;
+
+        }
+        
+       
+        .parrafoFooter{
+            font-size: 0.625rem;
+        }
+        .card-text{
+            font-size:0.7rem;
+        }
+        .card-title{
+            font-size : 1.25rem;
+        }
+        .titulo{
+            font-size: 2rem;
+            padding-bottom: none;
+        }
+        .frase{
+            font-size: 1rem;
+        }
+        
+        .parrafo,.parrafo2,.parrafoDestinos{
+        font-size : 0.7rem
+        }
+        
+        .tituloParrafo ,.tituloDireccion{
+            font-size: 0.8rem;
+        }
+
+        
+        .tituloCompu{
+            margin-top: 1rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+
+        }
+        .fraseCompu{
+            padding-bottom: 1rem;
+            margin-bottom: 0rem;
+        }
+        .ParrafosCompu{
+            padding-bottom: 5rem;
+            margin-bottom: 0;
+        }
+
+        .textoTablas{
+            font-size: 0.75rem;
+        }
+
+        }
+
+
+        /* configuracion para computadora  */
+        @media screen and (min-width: 768px){
+            /* QuienesSomos  */
+            .tituloCompu{
+                margin-top: 3rem;
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+
+            }
+            .fraseCompu{
+                padding-bottom: 1.5rem;
+                margin-bottom: 3rem;
+            }
+            .ParrafosCompu{
+                padding-bottom: 1.5rem;
+                margin-bottom: 3.5rem;
+            }
+
+            
+
+        }

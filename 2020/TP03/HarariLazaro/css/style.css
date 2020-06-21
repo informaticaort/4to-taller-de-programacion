@@ -1,0 +1,114 @@
+@font-face{
+    font-family: "waltDisney";
+    src : url("../fonts/waltographUI.ttf");
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/back.jpg);
+    background-size: 100%;  
+    padding-top: 20px;
+}
+
+.cajaLogin{
+    padding: 20px 20px;
+    text-align: center;
+    width: 33.33%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: double;
+    border: 5px double white;
+    background-color: lightblue;
+    color: gray;    
+}
+.cajaRegistro{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 20px ;
+    width: 33.33%;
+    border-style: double;
+    border: 5px double white;
+    background-color: lightblue;
+    color: gray;
+}
+.btnContinuar{
+    position: relative;
+    text-align: center;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 20%;
+    font-family: waltDisney,cursive;
+    height: 35px;
+}
+.btnContinuar:hover,.btnVolver:hover{
+    background-color: lightgreen;
+}
+.btnVolver{
+    position: relative;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+    background-color: lightblue;
+    width: 10%;
+    font-family: waltDisney,cursive;
+    font-size: 75%;
+    height: 35px;
+}
+
+.centrarItems{
+    text-align: left;
+    padding-left: 30%;
+}
+
+.input1,select{
+    width: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: grey;
+    margin : 1rem 0;
+    padding: 3px;
+    font-family: waltDisney, cursive;
+}
+select{
+    border-width: 2px;
+}
+
+h1,h2,h3,h4,h5,h6,p,label,a,#logTitulo,option,select{
+    font-family: "waltDisney", cursive;
+}
+a,option,select{
+    color:gray;
+}
+.press{
+    color:white;
+}
+
+.textoCentrado{
+    text-align: center;
+}
+.titulo{
+    padding: 50px
+}
+
+.banner{
+    text-align: center;
+    /*es igual que la clase "textoCentrado", pero si quiero agregarle algo a banner es mejor tenerlo separado*/  
+}
+.imgBanner{
+    margin-right: 3px;
+    border: 5px double white;
+}
+
+.imgCentral{
+    margin: auto;
+    display: block;
+}
+.oculto{
+    display: none;
+}
+.juego{
+    padding: 30px;
+}

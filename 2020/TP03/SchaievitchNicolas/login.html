@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+    <title>nova</title>
+</head>
+
+<body>
+    <div id="bg"></div>
+    <nav>
+        <a href="index.html" id="logo-link"><img id="logo-top" src="img/logo.png" alt="Inicio"></a>
+        <div id="navlinks">
+            <a href="registro.html">Registrarme</a>
+            <a href="login.html" id="login-link">Iniciar sesión</a>
+        </div>
+    </nav>
+
+    <div id="form-cont">
+        <h1>Ingresar</h1>
+        <form action="ingreso.html" name="login" onsubmit="return validateForm()" method="POST">
+            <div class="formline">
+                <label for="mail">E-mail</label><br>
+                <input type="email" placeholder="Correo electrónico" name="mail" id="mail">
+            </div>
+            <div class="formline">
+                <label for="password">Contraseña</label><br>
+                <input type="password" placeholder = "Contraseña" name="password" id="password">
+            </div>
+            <div class="formline">
+                <input type="submit" class="btn" id="login-btn" value="Ingresar">
+            </div>
+            <br>
+            <a href="registro.html">¿No tenés una cuenta? Registrate</a>
+        </form>
+    </div>
+
+
+
+    <div id="trig-three"></div>
+    <div id="trig-two"></div>
+    <div id="trig-one"></div>
+</body>
+
+</html>

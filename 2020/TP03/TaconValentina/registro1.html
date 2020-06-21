@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+        <title>Registro 1</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <meta charset = "UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Megrim&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <img class="center"src="img/logo.png" alt="logo" width="110" height="100">
+        <div class="registro">
+            <h1 class="titulos">registrarse</h1>
+            <form name="registrarse"method="post" action="registro2.html" onsubmit="return validateForm()">
+                <p>Los campos que tengan asterisco serán obligatorios.</p>
+                <div style="float: left;">
+                <label class="textos" >Nombre: *</label><br/>
+                <input type="text" name="nombre" placeholder="Ingrese su nombre" class="caja" required/>
+                </div>
+                <div style="float: right">
+                <label class="textos" >Apellido: *</label><br/>
+                <input type="text" name="apellido" placeholder="Ingrese su apellido" class="caja"  required/><br/>
+                </div>
+                <div style="float: left;">
+                <label class="textos">Contraseña: *</label><br/>
+                <input type="password" name="contraseña" placeholder="Ingrese su contraseña" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Debe tener mínimo un número, una mayúscula y una minúscula"class="caja" required/><br/>
+                </div>
+                <div style="float: right;">
+                <label class="textos">Repita su contraseña: *</label><br/>
+                <input type="password" name="contraseña1" placeholder="Repita su contraseña" class="caja" required/><br/>
+                </div>
+                <script>function validateForm() {
+                    var x = document.forms["registrarse"]["contraseña"].value;
+                    var a = document.forms["registrarse"]["contraseña1"].value;
+                    if (x != a) {
+                      alert("Las contraseñas no coinciden");
+                      return false;
+                    }
+                  }
+                </script>
+                <div style="float: left">
+                <label class="textos">E-mail: *</label><br/>
+                <input type="email" name="email" placeholder="Ingrese su e-mail" class="caja" required/><br/>
+                </div>
+                <div style="float: right;">
+                <label class="textos">Fecha de nacimiento: *</label><br/>
+                <input type="date" name="fecha de nacimiento" class="caja" required/><br/>
+                </div>  
+                <div>
+                <label class="textos">Localidad: *</label><br/>
+                <input type="text" name="localidad" placeholder="Escriba su localidad" class="caja" style="width: 465;" required/><br/>
+                </div>
+                <p>
+                    <label for="provincia" class="textos"> Elija la provincia en el que vive *</label>
+                    <div class="caja" style="float: left; width: 465;">
+                        <select name="provincia" required>
+                            <option disabled selected value="Seleccione una opción"> Seleccione una opción </option>
+                            <option value="Buenos Aires" class="textos">Buenos Aires</option>
+                            <option value="Catamarca" class="textos">Catamarca</option>
+                            <option value="Córdoba" class="textos">Córdoba</option>
+                            <option value="San Luis" class="textos">San Luis</option>
+                            <option value="Santa Fe" class="textos">Santa Fe</option>
+                            <option value="Misiones" class="textos">Misiones</option>
+                            <option value="Salta" class="textos">Salta</option>
+                            <option value="Jujuy" class="textos">Jujuy</option>
+                            <option value="Chaco" class="textos">Chaco</option>
+                            <option value="Río Negro" class="textos">Río Negro</option>
+                            <option value="La Rioja" class="textos">La Rioja</option>
+                            <option value="Neuquen" class="textos">Neuquen</option>
+                            <option value="Mendoza" class="textos">Mendoza</option>
+                            <option value="Tierra del Fuego" class="textos">Tierra del Fuego</option>
+                            <option value="Tucumán" class="textos">Tucumán</option>
+                            <option value="Entre Ríos" class="textos">Entre Ríos</option>
+                            <option value="Chubut" class="textos">Chubut</option>
+                            <option value="Santa Cruz" class="textos">Santa Cruz</option>
+                            <option value="Corrientes" class="textos">Corrientes</option>
+                            <option value="Formosa" class="textos">Formosa</option>
+                            <option value="Santiago del Estero" class="textos">Santiago del Estero</option>
+                            <option value="San Juan" class="textos">San Juan</option>
+                            <option value="La Pampa" class="textos">La Pampa</option>
+                        </select>
+                    </div>
+                </p>
+                <br/><input type="image" src="img/Siguiente.png" alt="Siguiente">
+                <progress value="33" max="100" class="progressbar">33 %</progress>
+            </form>
+        </div>
+    </body>
+</html>

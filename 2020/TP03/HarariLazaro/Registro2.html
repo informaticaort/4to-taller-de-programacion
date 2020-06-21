@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Site - Registro</title>    
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <img class = "imgBanner" src="images/bannerRegistro.jpg" alt="banner registro">
+    </div>
+    <br>
+    <div class="textoCentrado">
+        <h1 class = "press">¡Cada vez falta menos para que tengas tu usuario!</h1>
+    </div>
+    <br>
+    
+    <div class="cajaRegistro">
+        <button class = "btnVolver" onclick="volver()">Volver</button>
+    <form action="Registro3.html" method="post">
+        <!----------------------INTERESES----------------------->
+        <p class="check">Intereses:</p>
+        <div class="centrarItems">
+            <input type="checkbox" name="intereses1" value="matematica">
+            <label for="matematica"> Matematica</label><br>
+            <input type="checkbox" name = "interses2" value = "programacion">
+            <label for="programacion">Programacion</label><br>
+            <input type="checkbox" name = "intereses3" value = "otros">
+            <label for="otros">Otros</label><br>
+        </div>
+        <br>
+        <!----------------------RESTRICCIONES----------------------->
+        <label for="restriccion">Restricciones Alimenticias:</label>
+        <div class="centrarItems">
+            <input type="radio" id="kosher" name="restriccion" value="kosher">
+            <label for="kosher">Kosher</label><br>
+            <input type="radio" id="vegetariano" name="restriccion" value="vegetariano">
+            <label for="vegetariano">Vegetariano</label><br>
+            <input type="radio" id="celiaco" name="restriccion" value="celiaco">
+            <label for="celiaco">Celiaco</label><br>
+            <input type="radio" id="sinRestricciones" name="restriccion" value="sinRestricciones">
+            <label for="sinRestricciones">Sin Restricciones</label><br>
+        </div>   
+        <br>
+        <!----------------------COMIDA FAVORITA----------------------->
+        <label for="comidas">Comida Favorita:</label>
+            <select name="comidas" id="comidas" required>
+                <optgroup label = "Pastas">
+                    <option value="Spaghetti">Spaghetti</option>
+                    <option value="Gnoccis">Gnoccis</option>
+                    <option value="raviolCalabaza">Ravioles de Calabaza</option>
+                    <option value="raviolTernera">Ravioles de Ternera</option>
+                    <option value="raviolIntegral">Ravioles Integrales</option>
+                </optgroup>
+                <optgroup label = "Pizzas">
+                    <option value="pizzaMoza">Mozarella</option>
+                    <option value="pizzaMargaJamon">Margarita con Jamon</option>
+                    <option value="pizzaNapo">Napolitana</option>
+                    <option value="pizzaFea">Verdura (opcion no recomendada)</option>
+                    <option value="pizzaMuyFea">Anchoa (menos recomendada que la anterior)</option>
+                </optgroup>
+                <optgroup label = "Frutas">
+                    <option value="manzana">Manzana</option>
+                    <option value="pera">Pera</option>
+                    <option value="kiwi">Kiwi</option>
+                    <option value="frutosRojos">Frutos Rojos</option>
+                    <option value="banana">Banana</option>
+                </optgroup>
+                <optgroup label = "Verduras">
+                    <option value="lechuga">Lechuga</option>
+                    <option value="calabaza">Calabaza</option>
+                    <option value="kale">Kale</option>
+                    <option value="choclo">Choclo</option>
+                    <option value="remolacha">Remolacha</option>
+                </optgroup>
+                <option value="varios">Quiero agregar mi opcion</option>
+            </select>
+        <div class="oculto" id = "comidaOculto">
+            <label for="comOc">Escriba su opcion aqui:</label>
+            <input type="text" id = "comOc" placeholder="Escriba su opcion aqui" class = "input1">
+        </div>
+        <br>
+        <!----------------------PARQUES DISNEY----------------------->
+        <label for="parqueDisney">Parque Temático Favorito de World Disney Florida</label>
+            <select name="parqueDisney" id="parqueDisney" required>
+                <option value="magic">Magic Kingdom</option>
+                <option value="epcot">Epcot</option>
+                <option value="animal">Animal Kingdom</option>
+                <option value="hollywood">Hollywood Studios</option>
+                <option value="negado">Nunca fui</option>
+            </select>
+            <div class="oculto" id = "parquesOculto">
+                <input type="checkbox" id = "sorteo" value = "sorteo" name = "sorteo">
+                <label for="sorteo">Deseo participar del sorteo "Mi Primer Viaje a Disney"</label>
+            </div>
+            <br><br>
+            <!----------------------SUBMIT----------------------->
+            <button type = "submit" onclick = "registro2()" class = "btnContinuar">Continuar</button>
+        </form>
+    </div>    
+    <script src="js/script.js"></script>
+    <script src = "js/registro2.js "></script>
+</body>
+</html>

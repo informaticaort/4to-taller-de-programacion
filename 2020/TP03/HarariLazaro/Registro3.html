@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Site - Registro</title>    
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="images/bannerRegistro.jpg" alt="banner registro">
+    </div>
+    <div class="textoCentrado">
+        <h1 class = "press">¡Ultimo paso!</h1>
+        <h2 class = "press">¡Ya casi sos parte de nuestra familia!</h2>
+    </div>
+    <br> 
+    <div class="cajaRegistro">
+        <button class = "btnVolver" onclick="volver()">Volver</button>
+        <br>
+        <form action="graciasRegistro.html" method="post">
+            <label for="integrantesFamilia">¿Cuantos miembros hay en tu familia?</label>
+            <input class = "input1" type="number" min = "0" placeholder="Cantidad miembros familia" id = "integrantesFamilia" required>
+            <label for="colorFavorito">Color Favorito</label>
+            <input class = "input1" type="color" id = "colorFavorito" required>
+            <label for="comentarios">Comentarios:</label>
+            <textarea class = "input1" id="comentarios" rows="4" cols="50" required>La nota de tu trabajo será ...</textarea> 
+            <!--REQUIRED esta incluido en comentarios porque quien se registre esta obligado a dejarme algun comentario, no tiene otra opcion jeje-->
+            <br><br>
+            <button type = "submit" class = "btnContinuar" onclick = "registro3()">¡Crear Usuario!</button>
+        </form>
+    </div>    
+    <script src="js/script.js"></script>
+    <script src = "js/registro3.js"></script>
+</body>
+</html>

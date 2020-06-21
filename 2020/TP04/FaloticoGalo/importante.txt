@@ -1,0 +1,7 @@
+https://burinproject.000webhostapp.com/
+
+Hola profe , el formato movil esta bien desarrollado creo . Pero aveces tengo q cambiar 
+la resolucion dentro de google para que se ajusten los elementos y se vea bien . Creo q 
+es un error de google , porque revise mi codigo y no encontre algo que genere ese error.
+Por eso subi la pagina a la web , asi veia si desde el celular se veia bien y se ve perfec-
+-to . Para que lo puedas ver bien el formato movil , es el link de arriba.

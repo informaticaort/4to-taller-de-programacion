@@ -1,0 +1,181 @@
+/*
+azul oscuro: 4c566d
+gris oscuro: 989898
+gris claro: e3e3e3
+azul claro: adb9d3
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700&display=swap');
+
+body{
+    margin: 0;
+}
+
+.barraSup{
+    height: 20%;
+    background-color: #989898;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 8px 10px #525252;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6vw;
+    color: #4c566d;
+    text-align: right;
+    padding-right: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.logo{
+    height: 90%;
+    padding-left: 5%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#banner{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+#btn-login{
+    background-color: #4c566d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.links{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20;
+    font-weight: bold;
+    color: #adb9d3;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20;
+    color: black;
+    padding-left: 5%;
+    margin-top: 15%;
+}
+
+.formulario{
+    background-color: #e3e3e3;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    padding-bottom: 0;
+    border: 2px solid #989898;
+    border-radius: 6px;
+}
+
+#login{
+    margin-top: 25vh;
+}
+
+label{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15;
+    color: black;
+}
+
+input{
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+}
+
+select{
+    margin: 10px 10px 10px 0px;
+    padding: 5px;
+}
+
+.botones{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn-envio{
+    background-color: #4c566d;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.progressContainer{
+    margin-top: 25vh;
+    margin-bottom: 10px;
+    width: 40%;
+    height: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid #989898;
+    border-radius: 6px;
+}
+
+@keyframes anim1 {
+    from {width: 0%;}
+    to {width: 33%;}
+}
+
+@keyframes anim2 {
+    from {width: 33%;}
+    to {width: 66%;}
+}
+
+@keyframes anim3 {
+    from {width: 66%;}
+    to {width: 100%;}
+}
+
+
+#progressBar1{
+    width: 0%;
+    height: 10px;
+    background-color: #4c566d;
+    border-radius: 6px;
+    animation-name: anim1;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#progressBar2{
+    width: 33%;
+    height: 10px;
+    background-color: #4c566d;
+    border-radius: 6px;
+    animation-name: anim2;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+#progressBar3{
+    width: 66%;
+    height: 10px;
+    background-color: #4c566d;
+    border-radius: 6px;
+    animation-name: anim3;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
